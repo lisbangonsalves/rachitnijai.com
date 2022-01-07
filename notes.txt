@@ -1,5 +1,0 @@
-color pallet:
-#FFF5FD
-#FF96AD
-#005A8D
-#005A8D
