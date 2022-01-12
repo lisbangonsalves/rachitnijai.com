@@ -1,0 +1,28 @@
+.videosofyoutube{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+.videoofyoutubecontainer{
+  width: 85%;
+}
+@media screen and (max-width:600px){
+  .card-img-top{
+      height: 290px;
+  }
+}
+@media screen and (max-width:535px){
+  .card-img-top{
+      height: 255px;
+  }
+}
+@media screen and (max-width:430px){
+  .card-img-top{
+      height: 200px;
+  }
+}
