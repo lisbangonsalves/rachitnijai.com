@@ -35,6 +35,14 @@ function Footer() {
             >
               <i className='fab fa-youtube' />
             </Link>
+            <Link
+              className='social-icon-link youtube'
+              to='/'
+              target='_blank'
+              aria-label='Youtube'
+            >
+              <i class="bi bi-person-circle"></i>
+            </Link>
  
           </div>
         </div>
