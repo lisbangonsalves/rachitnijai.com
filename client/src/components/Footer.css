@@ -117,7 +117,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 240px;
+  width: 100px;
 }
 .social-logo img{
   width: 120px;
