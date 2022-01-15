@@ -12,7 +12,7 @@ function Cards() {
     const url = "http://localhost:5000/api/notes/fetchallnotes";
     axios.get(url).then(response => {
 
-      setArticles(response.data)
+      setArticles(response.data.reverse())
 
       console.log(response)
     })
