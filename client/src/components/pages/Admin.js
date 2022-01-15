@@ -1,9 +1,10 @@
 import React,{useState} from 'react';
 import '../../App.css';
 import Axios from "axios"
+import Footer from '../Footer';
 
 export default function Admin(){
-  const url="http://localhost:5000/addarticle"
+  const url="http://localhost:5000/api/notes/addnote"
   const [data, setdata] = useState({
     name:"",
     link:""
@@ -12,9 +13,10 @@ export default function Admin(){
     e.preventDefault();
     Axios.post(url,{
       name:data.name,
-    link:data.name
+      link:data.link
     }).then(res=>{
       console.log(res.data)
+      setdata({name: "", link: ""})
     })
   }
   function handleClick(e){
@@ -36,6 +38,7 @@ export default function Admin(){
         </form>
     </div>
     </div>
+    <Footer></Footer>
 </>
   )}
 
