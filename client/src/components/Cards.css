@@ -1,3 +1,70 @@
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.contactpage{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contactpage-container{
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.contact-logo img{
+    width: 400px;
+
+}
+.contactpage-container a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-weight: 600;
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+.contactpage-container a.emailcontact:hover{
+    text-decoration: underline;
+}
+.contactpage-socialmedia a{
+    padding: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .videosofyoutube{
   width: 100%;
   display: flex;
@@ -25,4 +92,166 @@
   .card-img-top{
       height: 200px;
   }
+}
+
+
+
+
+/* about css */
+
+
+.aboutpage{
+  width: 100%;
+  display: flex;
+}
+.aboutpagecontainer-1{
+  width: 40%;
+}
+.aboutpagecontainer-2{
+  width: 60%;
+}
+.aboutpagecontainer-1 img{
+  width:600px;
+  border-radius: 0 0 200px 0;
+}
+.aboutpagecontainer-2{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.aboutpagecontainer-2 h1{
+  font-family: sans-serif;
+  font-size: 70px;
+}
+.aboutpagecontainer-2 p {
+  margin-top: 30px;
+  font-weight: 500;
+  width: 70%;
+  font-family: sans-serif;
+  font-size: large;
+  text-align:center;
+  
+}
+.aboutpagecontainer-2 button{
+  padding: 10px;
+  font-size: large;
+  font-weight: 600;
+  margin-top: 30px;
+  font-family: sans-serif;
+  color: black;
+  border: 2px solid black;
+  background-color: white;
+}
+.aboutpagecontainer-2 button:hover{
+  padding: 12px;
+  border: 0;
+  background-color: black;
+  color: white;
+}
+@media screen and (max-width: 1260px) {
+  .aboutpage{
+      flex-direction: column;
+  }
+  .aboutpagecontainer-1{
+      width: 100%;
+  }
+  .aboutpagecontainer-1 img{
+      width: 100%;
+      border-radius: 0;
+  }
+  .aboutpagecontainer-2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+  }
+  .aboutheading{
+      width: 100%;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      text-align: center;
+  }
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
+html {
+scroll-behavior: smooth;
+}
+body {
+font-family: 'Noto Sans HK', sans-serif;
+background: #fff;
+}
+.slider {
+margin-bottom: 30px;
+position: relative;
+}
+.slider .owl-item.active.center .slider-card {
+transform: scale(1.15);
+opacity: 1;
+background: #000000; /* fallback for old browsers */
+
+color: #fff;
+}
+.slider-card {
+background: #fff;
+padding: 0px 0px;
+margin: 50px 15px 90px 15px;
+border-radius: 5px;
+box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+transform: scale(0.9);
+opacity: 0.5;
+transition: all 0.3s;
+}
+.slider-card img {
+border-radius: 5px 5px 0px 0px;
+}
+.owl-nav .owl-prev {
+position: absolute;
+top: calc(50% - 25px);
+left: 0;
+opacity: 1;
+font-size: 30px !important;
+z-index: 1;
+}
+.owl-nav .owl-next {
+position: absolute;
+top: calc(50% - 25px);
+right: 0;
+opacity: 1;
+font-size: 30px !important;
+z-index: 1;
+}
+.owl-dots {
+text-align: center;
+}
+.owl-dots .owl-dot {
+height: 10px;
+width: 10px;
+border-radius: 10px;
+background: #ccc !important;
+margin-left: 3px;
+margin-right: 3px;
+outline: none;
+}
+.owl-dots .owl-dot.active {
+background: #f44336 !important;
 }
