@@ -58,7 +58,7 @@ useEffect(() => {
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
         
-          <Route exact path="/admin"  component={user?Admin:Home} />
+          <Route exact path="/admin"  component={user?Admin:Login} />
 
           <Route path='/login' component={Login} />
         </Switch>
