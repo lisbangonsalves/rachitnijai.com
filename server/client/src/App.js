@@ -13,7 +13,7 @@ import userContext from './context/Users/UserContext';
 function App() {
   const  context = useContext(userContext);
  let success=false
-  const host = "http://localhost:5000"
+  const host = "https://ronnin.herokuapp.com"
   // const { user,getUser } = context;
   //   useEffect(() => {
   //       getUser()
@@ -25,7 +25,7 @@ function App() {
   
   const getUser = async () => {
     // API Call 
-    const response = await fetch(`http://localhost:5000/api/auth/getuser`, {
+    const response = await fetch(`https://ronnin.herokuapp.com/api/auth/getuser`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -2,7 +2,7 @@ import React,{useState,useEffect} from "react";
 import UserContext from "./UserContext";
 
 const UserState=(props)=>{
-    const host = "http://localhost:5000"
+    const host = "https://ronnin.herokuapp.com"
   const notesInitial = []
   const [user, setUser] = useState(notesInitial)
 

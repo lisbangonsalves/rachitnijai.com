@@ -9,7 +9,7 @@ function Cards() {
 
 
   useEffect(() => {
-    const url = "http://localhost:5000/api/notes/fetchallnotes";
+    const url = "https://ronnin.herokuapp.com/api/notes/fetchallnotes";
     axios.get(url).then(response => {
 
       setArticles(response.data.reverse())

@@ -10,18 +10,18 @@ export default function Admin(props){
  
 
   const [users, setUser] = useState([]);
-  const url="http://localhost:5000/api/notes/addnote"
+  const url="https://ronnin.herokuapp.com/api/notes/addnote"
   const [data, setdata] = useState({
     name:"",
     link:""
   })
   const loadUsers = async () => {
-    const result = await Axios.get("http://localhost:5000/api/notes/fetchallnotes");
+    const result = await Axios.get("https://ronnin.herokuapp.com/api/notes/fetchallnotes");
     setUser(result.data.reverse());
   };
   
   const deleteUser = async id => {
-    await Axios.delete(`http://localhost:5000/api/notes/deletenote/${id}`);
+    await Axios.delete(`https://ronnin.herokuapp.com/api/notes/deletenote/${id}`);
     window.location.reload();
     loadUsers();
   };
