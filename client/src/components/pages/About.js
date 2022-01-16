@@ -9,6 +9,7 @@ import img4 from "../img/4.png"
 import img5 from "../img/5.png"
 import img6 from "../img/6.png"
 import img7 from "../img/7.png"
+import { Link } from 'react-router-dom';
 
 function About() {
     // useEffect(() => {
@@ -26,16 +27,18 @@ function About() {
                 </div>
                 <div className="aboutpagecontainer-2">
                     <div className="aboutheading">
-                        <h1 >RONNIN STUDIO</h1>
+                        <h1 >RONNIN FILMS</h1>
                     </div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis illum eius eaque officiis recusandae, nobis dignissimos exercitationem doloribus fuga adipisci eos voluptatibus quam omnis saepe est accusamus debitis quo ea!</p>
+                    <p>We create high quality table top Product hero videos and Commercial videos.This video can make your brand stand out in market and help your targeted customers better understand and engage with your product or services.Also we make sure that we hit a certain quality.</p>
+                    <Link to='/contact'>
                     <button>Contact</button>
+                    </Link>
 
                 </div>
             </div>
             <section id="slider" className="pt-5">
                 <div className="container">
-                    <h1 className="text-center"><b>SKILLS TO OFFER</b></h1>
+                    <h1 className="text-center"><b>PRODUCTION PROCESS</b></h1>
                     <div className="slider">
                         <div className="owl-carousel">
                             <div className="slider-card">

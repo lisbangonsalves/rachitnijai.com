@@ -1,3 +1,9 @@
+@font-face {
+  font-family: nos ;
+  src: url(/client/src/components/fonts/solaria_italic.ttf);
+}
+
+
 video {
   object-fit: cover;
   width: 100%;
@@ -18,8 +24,8 @@ video {
   object-fit: contain;
 }
 
-.hero-container > h1 {
-  color: #fff;
+.hero-container > img {
+  width: 400px;
   font-size: 100px;
   margin-top: -100px;
 }

@@ -4,7 +4,7 @@ function CardItem(props) {
     <>
       <div className="col">
               <div className="card">
-                <iframe className="card-img-top" title={props.key} src={props.path} width="640" height="360" frameborder="0"></iframe>
+              <iframe width="640" height="360" title={props.key} src={props.path} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
     </>

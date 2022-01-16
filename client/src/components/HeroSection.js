@@ -3,14 +3,17 @@ import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
 import Video from "../videos/video-1.mp4"
+import logow from "./img/logow.png"
+
 
 function HeroSection() {
   return (
     <div className='hero-container'>
       <video src={Video} autoPlay loop muted />
-      <h1>RONNIN</h1>
-      <p>PROFESSIONAL FILMMAKER</p>
+      <img src={logow}></img>
+      <p>VIDEO PRODUCTION</p>
       <div className='hero-btns'>
+        
         <Button
           className='btns'
           buttonStyle='btn--outline'
@@ -18,14 +21,8 @@ function HeroSection() {
         >
           Contact
         </Button>
-        <Button
-          className='btns'
-          buttonStyle='btn--primary'
-          buttonSize='btn--large'
-
-        >
-          WATCH FILMS <i className='far fa-play-circle' />
-        </Button>
+        
+        
       </div>
     </div>
   );
