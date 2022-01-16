@@ -3,13 +3,12 @@ import React, { useState, useEffect } from "react";
 import '../../App.css';
 import Axios from "axios"
 import Footer from '../Footer';
-
-import { Link } from "react-router-dom";
-
+import { Link, Redirect,useHistory   } from "react-router-dom";
 
 
+export default function Admin(props){
+ 
 
-export default function Admin(){
   const [users, setUser] = useState([]);
   const url="http://localhost:5000/api/notes/addnote"
   const [data, setdata] = useState({
@@ -27,14 +26,13 @@ export default function Admin(){
     loadUsers();
   };
   
-  
   function submit(e) {
     e.preventDefault();
     Axios.post(url,{
       name:data.name,
       link:data.link
     }).then(res=>{
-      console.log(res.data)
+      // console.log(res.data)
       setdata({name: "", link: ""})
       window.location.reload();
     })
@@ -50,7 +48,6 @@ export default function Admin(){
   useEffect(() => {
     loadUsers();
   }, []);
-  
   return (
     <>
     <div>

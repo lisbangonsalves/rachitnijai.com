@@ -14,11 +14,11 @@ function Cards() {
 
       setArticles(response.data.reverse())
 
-      console.log(response)
+      // console.log(response)
     })
 
   }, [])
-  console.log(articles)
+  // console.log(articles)
   return (
     <div className="videosofyoutube">
       <div className="videoofyoutubecontainer">
